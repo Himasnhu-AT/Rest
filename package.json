@@ -1,0 +1,34 @@
+{
+  "name": "rest",
+  "version": "0.0.5",
+  "description": "jest like testing library supercharged with rust",
+  "main": "index.node",
+  "scripts": {
+    "build": "cargo-cp-artifact -nc index.node -- cargo build --message-format=json-render-diagnostics",
+    "build-debug": "npm run build --",
+    "build-release": "npm run build -- --release",
+    "install": "npm run build-release",
+    "test": "cargo test"
+  },
+  "author": "himasnhu-at <git>",
+  "license": "MIT",
+  "devDependencies": {
+    "cargo-cp-artifact": "^0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Himasnhu-AT/Rest.git"
+  },
+  "keywords": [
+    "rust",
+    "testing",
+    "library",
+    "nodejs",
+    "tests",
+    "rust-npm"
+  ],
+  "bugs": {
+    "url": "https://github.com/Himasnhu-AT/Rest/issues"
+  },
+  "homepage": "https://github.com/Himasnhu-AT/Rest#readme"
+}
